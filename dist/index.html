@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FindR</title>
+    <!-- Compiled and minified CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+
+<body>
+<header>
+    <nav class="bg-primary">
+        
+        <h1 class="text-light" align="center">
+            FindR
+            <i class="material-icons"></i>
+        </h1>
+    
+</nav>
+
+</header>
+  
+
+
+    <div class="container bg-primary">
+
+        <div class="">
+            <div class="" id="search">
+                <div class="container">
+                    <form align="center" class="form-control" id="search-form">
+                        <h2>Search</h2>
+                        <div class="input-field" id="">
+                            <input id="search-input" type="search" required="">
+                            <label class="label-icon" for="search">
+                                <i class="material-icons"></i>
+                            </label>
+                        
+                        </div>
+
+                        <br>
+                        <br>
+                        <h5>Sort By</h5>
+                        <div id="sortby" class="">
+                            
+                                <input name="sortby" type="radio" id="relevence" value="relevence" checked="">
+                                <label for="relevence">Relevence</label>
+                            
+                        
+                                <input name="sortby" type="radio" id="latest" value="latest">
+                                <label for="latest">Latest</label>
+                            
+                            <br>
+                            <br>
+                        </div>
+
+                        <h5>Limit:</h5>
+
+                        <div class="input-field">
+                             <input type="number" id="limit">
+                        </div>
+                        <br>
+                        <button action="submit" class="btn btn-large" type="submit">
+                           Search
+                        </button>
+
+                    </form>
+                </div>
+                
+                
+ 
+            </div>
+          
+        </div>
+        
+    </div>
+    <br>
+    <hr>
+    <div class="container" id="results">
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+   
+    <script src="http://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+
+    <script src="/dist/reddit.js"></script>
+</body>
+
+</html>
